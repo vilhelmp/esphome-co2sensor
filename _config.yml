@@ -1,3 +1,6 @@
+title: How to build a CO2 sensor for ESPHome
+description: A short how to for building a CO2 sensor using the Sensirion SCD 30
+
 remote_theme: pages-themes/midnight@v0.2.0
 plugins:
   - jekyll-relative-links
