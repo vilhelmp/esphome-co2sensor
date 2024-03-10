@@ -18,14 +18,16 @@ Files and how-to for making a CO2 sensor using the Sensirion SCD30 and a ESP 826
 
 
 
-<img src="file:///home/magnusp/projects/esp/sensor_co2-scd30/esphome-co2sensor/images/wiring_soldered.jpg" title="" alt="Wiring soldered" width="266">
+<img src="images/wiring_soldered.jpg" title="" alt="Wiring soldered" width="266">
+
+![Wiring](images/wiring_soldered.jpg | width=266)
 
 ## Code
 
 ## Results
 
-<img src="file:///home/magnusp/projects/esp/sensor_co2-scd30/esphome-co2sensor/images/finished_inside.jpg" title="" alt="" width="274">
+<img src="images/finished_inside.jpg" title="" alt="" width="274">
 
 
 
-<img src="file:///home/magnusp/projects/esp/sensor_co2-scd30/esphome-co2sensor/images/finished.jpg" title="" alt="" width="279">
+<img src="images/finished.jpg" title="" alt="" width="279">
