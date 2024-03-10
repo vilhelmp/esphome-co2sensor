@@ -22,6 +22,8 @@ Files and how-to for making a CO2 sensor using the Sensirion SCD30 and a ESP 826
 
 ![Wiring](images/wiring_soldered.jpg | width=266)
 
+![Wiring](images/wiring_soldered.jpg)
+
 ## Code
 
 ## Results
