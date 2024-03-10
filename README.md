@@ -10,7 +10,7 @@ Files and how-to for making a CO2 sensor using the Sensirion SCD30 and a ESP 826
 
 ## Wiring
 
-[Sensirion SCD 30 pinout diagram](resources/scd30_pinout.pdf)
+[Sensirion SCD 30 pinout diagram](resources/scd30_pinout.pdf){:target="_blank"}
 
 
 
@@ -19,10 +19,6 @@ Files and how-to for making a CO2 sensor using the Sensirion SCD30 and a ESP 826
 
 
 <img src="images/wiring_soldered.jpg" title="" alt="Wiring soldered" width="266">
-
-![Wiring](images/wiring_soldered.jpg | width=266)
-
-![Wiring](images/wiring_soldered.jpg)
 
 ## Code
 
