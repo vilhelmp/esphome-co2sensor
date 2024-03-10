@@ -23,8 +23,6 @@ Files and how-to for making a CO2 sensor using the Sensirion SCD30 and a ESP 826
 ## Code
 
 Here is the code:
-<details>
- <summary>Code</summary>
 
  ```yml
 esphome:
@@ -133,7 +131,6 @@ display:
       }
 
 ```
-</details>
 
 ## Results
 
