@@ -53,7 +53,19 @@ For the individual pin-out diagram for SCD 30 see Sensirions webpage, or find it
 
 To get the device up and running you need to first make the initial flash of the ESP8266 board. Just plug the USB into the device running ESPHome/Home Assistant and flash it. After this you edit the ESPHome code and flash it remotely.
 
-Here is the code:
+The code is pretty long, but the main parts are the 
+
+- ESPHome/Home Assistant support libraries/settings (think: wifi, time,api-key, fallback mode)
+
+- after this comes setting up the sensors (like: which pin it is connected to and what address). 
+  
+  # 
+  
+  The i2c protocol uses only one wire, thus the address needs to be specified. Note those places in the code `address: 0x61` and `address: 0x3C` for `sensor:` and `display:`.
+  
+  Here is the code:
+  
+  
 
 ```yml
 esphome:
@@ -162,6 +174,8 @@ display:
      }
 ```
 
+### Log errors
+
 You might see log entry with ```Component display took a long time for an operation``` and ```Component should block for at most 20-30ms```. This is not strange, and the log message can be suppressed by adding this to the code
 
 ```yml
@@ -171,7 +185,9 @@ logger:
     component: ERROR
 ```
 
+### Display
 
+The last section of the code, with the "lambda" function is where things are printed to display. Do mess around with the C-code contained in this function to change how things are showed.
 
 ## Results
 
