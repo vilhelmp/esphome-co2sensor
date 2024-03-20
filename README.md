@@ -58,14 +58,12 @@ The code is pretty long, but the main parts are the
 - ESPHome/Home Assistant support libraries/settings (think: wifi, time,api-key, fallback mode)
 
 - after this comes setting up the sensors (like: which pin it is connected to and what address). 
-  
-  # 
-  
-  The i2c protocol uses only one wire, thus the address needs to be specified. Note those places in the code `address: 0x61` and `address: 0x3C` for `sensor:` and `display:`.
-  
-  Here is the code:
-  
-  
+ 
+
+The i2c protocol uses only one wire, thus the address needs to be specified. Note those places in the code `address: 0x61` and `address: 0x3C` for `sensor:` and `display:`.
+
+Here is the code:
+
 
 ```yml
 esphome:
