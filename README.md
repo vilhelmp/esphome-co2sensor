@@ -1,6 +1,6 @@
 ![](/home/magnusp/projects/esp/sensor_co2-scd30/esphome-co2sensor/images/screenshot_ha_co2.png)
 
-# # CO2 sensor
+# CO2 sensor
 
 Files and how-to for making a CO2 sensor using the Sensirion SCD30 and a ESP 8266 (D1 Mini type)
 
