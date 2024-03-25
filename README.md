@@ -1,4 +1,5 @@
-![](/home/magnusp/projects/esp/sensor_co2-scd30/esphome-co2sensor/images/screenshot_ha_co2.png)
+### <img src="images/screenshot_ha_co2.png" title="" alt="Screenshot of Home Assistant with the CO2 level in a graph" width="480">
+
 
 # CO2 sensor
 
@@ -8,7 +9,7 @@ Files and how-to for making a CO2 sensor using the Sensirion SCD30 and a ESP 826
 
 This document describes how I built a CO2 sensor that integrates into [ESPHome](https://esphome.io/){:target="_blank} in [Home Assistant](https://www.home-assistant.io/){:target="_blank"}. The build is using a ESP 8266 board, the Wemos D1 mini. If you have Victoria Metrics and Grafana or equivalent in you Home Assistant you can also gain long term insights from this sensor.
 
-![](/home/magnusp/projects/esp/sensor_co2-scd30/esphome-co2sensor/images/grafana_example.png)
+### <img src="images/grafana_example.png" title="" alt="Grafana example" width="266">
 
 Above is an example of a 7 day series, shown in Grafana with officially bad, ok and good levels. The current location of the sensor is perhaps not ideal, but the measurements have a consistent periodicity. 
 
@@ -49,6 +50,8 @@ For the individual pin-out diagram for SCD 30 see Sensirions webpage, or find it
 
 ### <img src="images/wiring_soldered.jpg" title="" alt="Wiring soldered" width="266">
 
+For a great reference on the various pinouts on the D1 mini see [Last Minute Engineers page](https://lastminuteengineers.com/wemos-d1-mini-pinout-reference/). 
+
 ## Code
 
 To get the device up and running you need to first make the initial flash of the ESP8266 board. Just plug the USB into the device running ESPHome/Home Assistant and flash it. After this you edit the ESPHome code and flash it remotely.
@@ -58,12 +61,10 @@ The code is pretty long, but the main parts are the
 - ESPHome/Home Assistant support libraries/settings (think: wifi, time,api-key, fallback mode)
 
 - after this comes setting up the sensors (like: which pin it is connected to and what address). 
- 
 
 The i2c protocol uses only one wire, thus the address needs to be specified. Note those places in the code `address: 0x61` and `address: 0x3C` for `sensor:` and `display:`.
 
 Here is the code:
-
 
 ```yml
 esphome:
