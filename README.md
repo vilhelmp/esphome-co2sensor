@@ -5,6 +5,9 @@
 
 Files and how-to for making a CO2 sensor using the Sensirion SCD30 and a ESP 8266 (D1 Mini type)
 
+
+<img src="images/finished_display.png" title="" alt="Finished sensor, showing display with values" width="266">
+
 ## Introduction
 
 This document describes how I built a CO2 sensor that integrates into [ESPHome](https://esphome.io/){:target="_blank} in [Home Assistant](https://www.home-assistant.io/){:target="_blank"}. The build is using a ESP 8266 board, the Wemos D1 mini. If you have Victoria Metrics and Grafana or equivalent in you Home Assistant you can also gain long term insights from this sensor.
@@ -192,8 +195,6 @@ The last section of the code, with the "lambda" function is where things are pri
 
 ## Results
 
-The device has been running now for over a year, and everything works as expected. Of course the measurements are mainly useful in relative terms, i.e. have the CO2 level gone up or down? Not, "the CO2 level is now exactly XXX ppm".
+The device has been running now for over a year, and everything works as expected. Of course the measurements are mainly useful in relative terms, i.e. have the CO2 level gone up or down? Not, "the CO2 level is now exactly XXX ppm". Since CO2 is a molecule, we do not need any specific air circulation, like with say a particle sensor. The CO2 level in the sensor will quickly equate that of the air outside the case.
 
-<img src="images/finished_inside.jpg" title="" alt="" width="274">
-
-<img src="images/finished.jpg" title="" alt="" width="279">
+ <img src="images/finished_inside.jpg" title="" alt="" width="255"> <img src="images/finished.jpg" title="" alt="" width="247"> <img src="images/finished_display.png" title="" alt="Finished sensor, showing display with values" width="250">
