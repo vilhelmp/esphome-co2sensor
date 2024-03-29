@@ -46,7 +46,7 @@ The wiring is pretty straight forward, I made a diagram to clarify it.
 
 ### <a href="images/wiring_schematic.png" target="_blank"><img src="images/wiring_schematic.png" title="" alt="Schematic over the wiring" width="460"></a>
 
-An SVG-version for you to edit is located in the resources-folder, or linked <a href="resources/wiring.svg" target="_blank">here<\a>.
+An SVG-version for you to edit is located in the resources-folder, or linked <a href="resources/wiring.svg" target="_blank">here</a>.
 
 For the individual pin-out diagram for SCD 30 see Sensirions webpage, or find it here:  [Sensirion SCD 30 pinout diagram](resources/scd30_pinout.pdf){:target="_blank"}. 
 
